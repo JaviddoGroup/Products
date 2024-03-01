@@ -13,7 +13,7 @@
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 35%;
+        width: 33%;
         height: auto;
         /* object-fit: cover; */
     }
@@ -85,6 +85,16 @@
         overflow: hidden;
         justify-content: center;
         width: 90%;
+        height: auto;
+        /* object-fit: cover; */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .picture-frame {
+        overflow: hidden;
+        justify-content: center;
+        width: 100%;
         height: auto;
         /* object-fit: cover; */
     }
