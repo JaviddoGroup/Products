@@ -1,0 +1,91 @@
+@media screen and (max-width: 2200px) {
+    .picture-frame {
+        overflow: hidden;
+        justify-content: center;
+        width: 35%;
+        height: auto;
+        /* object-fit: cover; */
+    }
+}
+
+
+@media screen and (max-width: 2000px) {
+    .picture-frame {
+        overflow: hidden;
+        justify-content: center;
+        width: 35%;
+        height: auto;
+        /* object-fit: cover; */
+    }
+}
+
+
+@media screen and (max-width: 1800px) {
+    .picture-frame {
+        overflow: hidden;
+        justify-content: center;
+        width: 38%;
+        height: auto;
+        /* object-fit: cover; */
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .picture-frame {
+        overflow: hidden;
+        justify-content: center;
+        width: 40%;
+        height: auto;
+        /* object-fit: cover; */
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .picture-frame {
+        overflow: hidden;
+        justify-content: center;
+        width: 40%;
+        height: auto;
+        /* object-fit: cover; */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .picture-frame {
+        overflow: hidden;
+        justify-content: center;
+        width: 48%;
+        height: auto;
+        /* object-fit: cover; */
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .picture-frame {
+        overflow: hidden;
+        justify-content: center;
+        width: 55%;
+        height: auto;
+        /* object-fit: cover; */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .picture-frame {
+        overflow: hidden;
+        justify-content: center;
+        width: 65%;
+        height: auto;
+        /* object-fit: cover; */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .picture-frame {
+        overflow: hidden;
+        justify-content: center;
+        width: 90%;
+        height: auto;
+        /* object-fit: cover; */
+    }
+}
