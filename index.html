@@ -15,12 +15,51 @@
 
         <h1 class="header-text">CHOOSE THE CATALOG YOU NEED</h1>
     </div>
-    <div>
-        <div>
-            <a href="./pages/Brakes/brake.html">Brake Catalog</a>
+    <div class="frame-center">
+        <div class="category-list">
+            <div class="container part-box">
+                <img src="./media/img/brakesystem.jpg" alt="Image" class="image">
+                <div class="text">
+                    <a href="./pages/Brakes/brake.html"> BRAKE CATALOG</a>
+                </div>
+            </div>
+            <div class="container part-box">
+                <img src="./media/img/brakesystem.jpg" alt="Image" class="image">
+                <div class="text">
+                    <a href="./pages/Brakes/brake.html"> BRAKE CATALOG</a>
+                </div>
+            </div>
+            <div class="container part-box">
+                <img src="./media/img/brakesystem.jpg" alt="Image" class="image">
+                <div class="text">
+                    <a href="./pages/Brakes/brake.html"> BRAKE CATALOG</a>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- <script src="./js/script.js"></script> -->
+    <div class="frame-center">
+        <div class="category-list">
+            <div class="container part-box">
+                <img src="./media/img/brakesystem.jpg" alt="Image" class="image">
+                <div class="text">
+                    <a href="./pages/Brakes/brake.html"> BRAKE CATALOG</a>
+                </div>
+            </div>
+            <div class="container part-box">
+                <img src="./media/img/brakesystem.jpg" alt="Image" class="image">
+                <div class="text">
+                    <a href="./pages/Brakes/brake.html"> BRAKE CATALOG</a>
+                </div>
+            </div>
+            <div class="container part-box">
+                <img src="./media/img/brakesystem.jpg" alt="Image" class="image">
+                <div class="text">
+                    <a href="./pages/Brakes/brake.html"> BRAKE CATALOG</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -59,12 +98,26 @@
         }
 
         setInterval(playNextVideo, videoElement.duration * 1000);
+
+
+
+        const video = document.querySelector('.category-name video');
+
+        video.addEventListener('mouseenter', function () {
+            this.play();
+        });
+
+        video.addEventListener('mouseleave', function () {
+            this.pause();
+            this.currentTime = 0; // Сброс воспроизведения до начала при покидании мыши
+        });
+
     </script>
 
 
 
 
-
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

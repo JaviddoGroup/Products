@@ -1,12 +1,13 @@
-if (!window.videos) {
-    const videos = ["../media/video/1.mp4", "../media/video/2.mp4", "../media/video/3.mp4", "../media/video/4.mp4", "../media/video/5.mp4", "../media/video/6.mp4", "../media/video/7.mp4"]; // Пути к вашим видео
-}
-const videoElement = document.getElementById("background-video");
+document.addEventListener("DOMContentLoaded", function () {
+    const targetElements = document.querySelectorAll('.part-box');
 
-let currentVideoIndex = 0;
+    targetElements.forEach(function (element) {
+        element.addEventListener('mouseenter', function () {
+            this.classList.add('box-hover'); // Добавление класса при наведении
+        });
 
-videoElement.addEventListener("ended", () => {
-    currentVideoIndex = (currentVideoIndex + 1) % videos.length;
-    videoElement.src = videos[currentVideoIndex];
-    videoElement.play();
+        element.addEventListener('mouseleave', function () {
+            this.classList.remove('box-hover'); // Удаление класса при покидании
+        });
+    });
 });

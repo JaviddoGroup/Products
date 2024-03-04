@@ -155,9 +155,9 @@
 }
 
 .swiper-slide img {
-    width: 100%;
+    width: 90%;
     height: auto;
-    /* object-fit: cover; */
+    object-fit: cover;
 
 }
 
@@ -165,5 +165,20 @@
     display: flex;
     justify-content: center;
     object-fit: cover;
+
+}
+
+
+.swiper-pagination {
+    width: 50% !important;
+    left: 24.5% !important;
+}
+
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 5px !important;
+    background-color: #222a40 !important;
+    border-radius: 0 !important;
+    /* width: 80%; */
 
 }
