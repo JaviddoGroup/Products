@@ -112,4 +112,15 @@
         height: auto;
         /* object-fit: cover; */
     }
+
+    .buttons-for-page {
+        display: none;
+    }
+
+    .swiper-pagination {
+        top: 80% !important;
+        width: 90% !important;
+        /* left: 28%; */
+    }
+
 }
