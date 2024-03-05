@@ -21,7 +21,7 @@
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 40%;
+        width: 33%;
         height: auto;
         /* object-fit: cover; */
     }
