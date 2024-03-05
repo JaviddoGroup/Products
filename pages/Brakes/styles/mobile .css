@@ -2,10 +2,18 @@
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 35%;
+        width: 40%;
         height: auto;
         /* object-fit: cover; */
     }
+
+    .swiper-pagination {
+        top: 92% !important;
+        width: 40%;
+        left: 28%;
+    }
+
+
 }
 
 
@@ -13,9 +21,15 @@
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 33%;
+        width: 40%;
         height: auto;
         /* object-fit: cover; */
+    }
+
+    .swiper-pagination {
+        top: 92% !important;
+        width: 40%;
+        left: 28%;
     }
 }
 
@@ -24,7 +38,7 @@
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 38%;
+        width: 40%;
         height: auto;
         /* object-fit: cover; */
     }
@@ -54,7 +68,7 @@
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 48%;
+        width: 40%;
         height: auto;
         /* object-fit: cover; */
     }
