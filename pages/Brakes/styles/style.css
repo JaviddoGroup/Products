@@ -169,20 +169,7 @@
 }
 
 
-.swiper-pagination {
-    top: 90% !important;
-    width: 40% !important;
-    left: 28% !important;
-}
 
-.swiper-pagination-bullet {
-    width: 10px !important;
-    height: 5px !important;
-    background-color: #222a40 !important;
-    border-radius: 0 !important;
-    /* width: 80%; */
-
-}
 
 .buttons-for-page div {
     width: 60px;
