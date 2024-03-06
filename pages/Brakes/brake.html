@@ -144,7 +144,9 @@
         var mySwiper = new Swiper('.swiper-container', {
             // Настройки слайдера
             direction: 'horizontal',
-            zoom: true,
+            zoom: {
+                enabled: true, // Включить функцию масштабирования
+            },
             slidesPerView: 1,
             spaceBetween: 0,
             loop: true,
