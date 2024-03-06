@@ -31,7 +31,7 @@
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 40%;
+        width: 30%;
         height: auto;
         /* object-fit: cover; */
     }
@@ -41,7 +41,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 10px;
         margin: 0 !important;
         left: 8% !important;
     }
@@ -59,7 +59,7 @@
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 40%;
+        width: 30%;
         height: auto;
         /* object-fit: cover; */
     }
@@ -86,7 +86,7 @@
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 40%;
+        width: 30%;
         height: auto;
         /* object-fit: cover; */
     }
@@ -113,7 +113,7 @@
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 40%;
+        width: 27%;
         height: auto;
         /* object-fit: cover; */
     }
@@ -140,7 +140,7 @@
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 40%;
+        width: 39%;
         height: auto;
         /* object-fit: cover; */
     }
@@ -167,7 +167,7 @@
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 55%;
+        width: 40%;
         height: auto;
         /* object-fit: cover; */
     }
@@ -194,7 +194,7 @@
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 70%;
+        width: 33%;
         height: auto;
         /* object-fit: cover; */
     }
