@@ -168,24 +168,33 @@
                 // Добавьте другие слайды с ссылками по аналогии
             ]
         });
-        var paginationBullets = document.querySelectorAll('.swiper-slide');
+        document.addEventListener('DOMContentLoaded', function () {
+            var paginationBullets = document.querySelectorAll('.swiper-slide');
+            var isAutoplayStopped = false; // Переменная для отслеживания состояния автопрокрутки
 
-        paginationBullets.forEach(function (bullet) {
-            bullet.addEventListener('mouseenter', function () {
-                mySwiper.autoplay.stop(); // Остановить автопрокрутку
-            });
+            paginationBullets.forEach(function (bullet) {
+                bullet.addEventListener('mouseenter', function () {
+                    mySwiper.autoplay.stop(); // Остановить автопрокрутку при наведении
+                });
 
-            bullet.addEventListener('mouseleave', function () {
-                mySwiper.autoplay.start(); // Запустить автопрокрутку
+                bullet.addEventListener('mouseleave', function () {
+                    if (!isAutoplayStopped) {
+                        mySwiper.autoplay.start(); // Запустить автопрокрутку при уводе мыши, если она была остановлена
+                    }
+                });
+
+                bullet.addEventListener('click', function () {
+                    isAutoplayStopped = !isAutoplayStopped; // Инвертировать состояние переменной при клике
+                    if (isAutoplayStopped) {
+                        mySwiper.autoplay.stop(); // Остановить автопрокрутку при клике, если она не была остановлена
+                    } else {
+                        mySwiper.autoplay.start(); // Запустить автопрокрутку при клике, если она была остановлена
+                    }
+                });
             });
         });
-        bullet.addEventListener('click', function () {
-            if (mySwiper.autoplay.running) {
-                mySwiper.autoplay.stop(); // Остановить автопрокрутку при клике, если она была запущена
-            } else {
-                mySwiper.autoplay.start(); // Запустить автопрокрутку при клике, если она была остановлена
-            }
-        });
+
+
 
     </script>
 
