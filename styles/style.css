@@ -115,3 +115,9 @@ video {
 .box-hover .image {
     z-index: 1;
 }
+
+.video-container button {
+    z-index: 100;
+    position: relative;
+    top: 80%;
+}
