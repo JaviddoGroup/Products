@@ -314,7 +314,7 @@
     /* Ваши стили здесь */
     .container {
         position: relative;
-        width: 100px;
+        width: 190px;
         margin: 0 3px;
     }
 
@@ -327,8 +327,8 @@
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 5px;
         text-align: center;
-        width: 100px;
-        height: 54px;
+        width: 190px;
+        height: 102px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -337,12 +337,12 @@
     .category-list {
         display: flex;
         justify-content: space-around;
-        width: 70%;
+        width: 100%;
         flex-wrap: wrap;
     }
 
     .text a {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .header-text {
