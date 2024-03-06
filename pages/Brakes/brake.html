@@ -179,6 +179,13 @@
                 mySwiper.autoplay.start(); // Запустить автопрокрутку
             });
         });
+        bullet.addEventListener('click', function () {
+            if (mySwiper.autoplay.running) {
+                mySwiper.autoplay.stop(); // Остановить автопрокрутку при клике, если она была запущена
+            } else {
+                mySwiper.autoplay.start(); // Запустить автопрокрутку при клике, если она была остановлена
+            }
+        });
 
     </script>
 
