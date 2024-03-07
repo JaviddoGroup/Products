@@ -174,15 +174,15 @@
             var isAutoplayStopped = false; // Переменная для отслеживания состояния автопрокрутки
 
             paginationBullets.forEach(function (bullet) {
-                bullet.addEventListener('mouseenter', function () {
-                    mySwiper.autoplay.stop(); // Остановить автопрокрутку при наведении
-                });
+                // bullet.addEventListener('mouseenter', function () {
+                //     mySwiper.autoplay.stop(); // Остановить автопрокрутку при наведении
+                // });
 
-                bullet.addEventListener('mouseleave', function () {
-                    if (!isAutoplayStopped) {
-                        mySwiper.autoplay.start(); // Запустить автопрокрутку при уводе мыши, если она была остановлена
-                    }
-                });
+                // bullet.addEventListener('mouseleave', function () {
+                //     if (!isAutoplayStopped) {
+                //         mySwiper.autoplay.start(); // Запустить автопрокрутку при уводе мыши, если она была остановлена
+                //     }
+                // });
 
                 bullet.addEventListener('click', function () {
                     isAutoplayStopped = !isAutoplayStopped; // Инвертировать состояние переменной при клике
