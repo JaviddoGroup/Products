@@ -469,7 +469,7 @@
     .alert-text-box {
         position: absolute;
         top: 25px;
-        width: 75%;
+        width: 85%;
         height: 50px;
         border-radius: 10px;
         display: flex;
@@ -524,7 +524,7 @@
     .alert-text-box {
         position: absolute;
         top: 25px;
-        width: 85%;
+        width: 95%;
         height: 50px;
         border-radius: 10px;
         display: flex;
