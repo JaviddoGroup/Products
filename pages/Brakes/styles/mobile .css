@@ -252,6 +252,25 @@
     .buttons-for-page {
         display: none;
     }
+
+    .popup {
+        width: 98%;
+        top: 0 !important;
+        position: absolute;
+        height: auto;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+    }
+
+    .popup-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .popup-open {
+        display: block !important;
+    }
 }
 
 @media screen and (max-width: 400px) {

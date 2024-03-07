@@ -236,7 +236,7 @@
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        var mySwiper = new Swiper('.swiper-container', {
+        mySwiper = new Swiper('.swiper-container', {
             // Настройки слайдера
             direction: 'horizontal',
             zoom: {
@@ -280,16 +280,120 @@
                     }
                 });
 
-                bullet.addEventListener('click', function () {
-                    isAutoplayStopped = !isAutoplayStopped; // Инвертировать состояние переменной при клике
-                    if (isAutoplayStopped) {
-                        mySwiper.autoplay.stop(); // Остановить автопрокрутку при клике, если она не была остановлена
+                // bullet.addEventListener('click', function () {
+                //     isAutoplayStopped = !isAutoplayStopped; // Инвертировать состояние переменной при клике
+                //     if (isAutoplayStopped) {
+                //         mySwiper.autoplay.stop(); // Остановить автопрокрутку при клике, если она не была остановлена
+                //     } else {
+                //         mySwiper.autoplay.start(); // Запустить автопрокрутку при клике, если она была остановлена
+                //     }
+                // });
+            });
+        });
+
+
+
+
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var popup = null;
+            var popupImage = null;
+            var currentImageUrl = null;
+            var autoplayStopped = false; // Переменная для отслеживания состояния автопрокрутки
+
+            function openPopup(imageUrl) {
+                if (!popup) {
+                    popup = document.createElement('div');
+                    popup.className = 'popup';
+                    popupImage = document.createElement('img');
+                    popupImage.className = 'popup-image';
+                    popup.appendChild(popupImage);
+                    document.body.appendChild(popup);
+                    centerPopup();
+                    stopAutoplay(); // Останавливаем автопрокрутку слайдов
+                }
+                popupImage.src = imageUrl;
+                currentImageUrl = imageUrl;
+                document.body.style.overflow = 'hidden'; // Отключаем прокрутку страницы при открытом попапе
+            }
+
+            function closePopup() {
+                if (popup) {
+                    popup.remove();
+                    popup = null;
+                    popupImage = null;
+                    currentImageUrl = null;
+                    document.body.style.overflow = ''; // Включаем прокрутку страницы после закрытия попапа
+                    if (!autoplayStopped) {
+                        startAutoplay(); // Запускаем автопрокрутку слайдов, если она была активна
+                    }
+                }
+            }
+
+            function centerPopup() {
+                var windowHeight = window.innerHeight;
+                var popupHeight = popup.offsetHeight;
+                var topMargin = (windowHeight - popupHeight) / 2;
+                popup.style.top = topMargin + 'px';
+            }
+
+            function stopAutoplay() {
+                var mySwiper = document.querySelector('.swiper-container').swiper;
+                mySwiper.autoplay.stop();
+                autoplayStopped = true; // Обновляем состояние переменной
+            }
+
+            function startAutoplay() {
+                var mySwiper = document.querySelector('.swiper-container').swiper;
+                mySwiper.autoplay.start();
+                autoplayStopped = false; // Обновляем состояние переменной
+            }
+
+            document.querySelectorAll('.swiper-slide').forEach(function (slide) {
+                slide.addEventListener('click', function () {
+                    var imageUrl = this.querySelector('img').src;
+                    if (popup && currentImageUrl === imageUrl) {
+                        closePopup();
                     } else {
-                        mySwiper.autoplay.start(); // Запустить автопрокрутку при клике, если она была остановлена
+                        openPopup(imageUrl);
                     }
                 });
             });
+
+            document.addEventListener('click', function (event) {
+                if (popup && event.target === popup) {
+                    closePopup();
+                }
+            });
+
+            document.addEventListener('click', function (event) {
+                if (popupImage && event.target === popupImage) {
+                    closePopup();
+                }
+            });
+
+            window.addEventListener('resize', function () {
+                centerPopup();
+            });
         });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
