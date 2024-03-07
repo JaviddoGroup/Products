@@ -538,3 +538,31 @@
 
     }
 }
+
+@media screen and (max-width: 360px) {
+
+
+    .text-box {
+        display: flex;
+        justify-content: center;
+        z-index: 10000;
+        position: sticky;
+    }
+
+    .alert-text-box {
+        position: absolute;
+        top: 25px;
+        width: 95%;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: #fff;
+        background-color: rgb(32 32 32 / 70%);
+        backdrop-filter: blur(1px);
+        font-weight: bold;
+
+    }
+}
