@@ -29,7 +29,12 @@
         justify-content: center;
         z-index: 10000;
         position: sticky;
+
     }
+
+
+
+
 
     .alert-text-box {
         position: absolute;
