@@ -18,6 +18,8 @@
 </head>
 
 <body>
+    <div class="text-box">
+    </div>
     <div class="center-frame">
 
         <div class="picture-frame">
@@ -265,31 +267,7 @@
                 // Добавьте другие слайды с ссылками по аналогии
             ]
         });
-        document.addEventListener('DOMContentLoaded', function () {
-            var paginationBullets = document.querySelectorAll('.swiper-slide');
-            var isAutoplayStopped = false; // Переменная для отслеживания состояния автопрокрутки
 
-            paginationBullets.forEach(function (bullet) {
-                bullet.addEventListener('mouseenter', function () {
-                    mySwiper.autoplay.stop(); // Остановить автопрокрутку при наведении
-                });
-
-                bullet.addEventListener('mouseleave', function () {
-                    if (!isAutoplayStopped) {
-                        mySwiper.autoplay.start(); // Запустить автопрокрутку при уводе мыши, если она была остановлена
-                    }
-                });
-
-                // bullet.addEventListener('click', function () {
-                //     isAutoplayStopped = !isAutoplayStopped; // Инвертировать состояние переменной при клике
-                //     if (isAutoplayStopped) {
-                //         mySwiper.autoplay.stop(); // Остановить автопрокрутку при клике, если она не была остановлена
-                //     } else {
-                //         mySwiper.autoplay.start(); // Запустить автопрокрутку при клике, если она была остановлена
-                //     }
-                // });
-            });
-        });
 
 
 
@@ -326,9 +304,8 @@
                     popupImage = null;
                     currentImageUrl = null;
                     document.body.style.overflow = ''; // Включаем прокрутку страницы после закрытия попапа
-                    if (!autoplayStopped) {
-                        startAutoplay(); // Запускаем автопрокрутку слайдов, если она была активна
-                    }
+                    autoplayStopped = false; // Устанавливаем значение в false при закрытии попапа
+                    startAutoplay(); // Запускаем автопрокрутку слайдов
                 }
             }
 
@@ -376,6 +353,28 @@
 
             window.addEventListener('resize', function () {
                 centerPopup();
+            });
+        });
+
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiperSlideActiveElements = document.querySelectorAll('.swiper-slide');
+
+            swiperSlideActiveElements.forEach(function (element) {
+                element.addEventListener('click', function () {
+                    var textElement = document.createElement('div');
+                    textElement.textContent = 'To exit full-screen mode, click on the photo again';
+                    textElement.classList.add('alert-text-box'); // Добавление класса "my-text-class"
+
+                    var bodyElement = document.querySelector('.text-box');
+                    bodyElement.insertBefore(textElement, bodyElement.firstChild);
+
+                    setTimeout(function () {
+                        textElement.style.display = 'none';
+                    }, 3000); // Таймер на 3 секунды (3000 миллисекунд)
+                });
             });
         });
 
