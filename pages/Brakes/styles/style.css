@@ -250,15 +250,3 @@ video {
 }
 
 /* ----------------------------------------------------------------------------------------------- */
-
-.links-for-first-pages {
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-}
-
-.links-for-first-pages:hover {
-    width: 40px;
-    height: 40px;
-    background-color: #21274586;
-}
