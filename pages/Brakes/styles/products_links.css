@@ -1,0 +1,422 @@
+@media screen and (max-width: 2560px) {
+    .pages-links a::after {
+        content: "";
+        display: none;
+        width: 40px;
+        /* ширина вашей иконки */
+        height: 40px;
+        /* высота вашей иконки */
+        background-image: url('../../../media/svg/link.svg');
+        background-size: cover;
+        margin: auto;
+    }
+
+    .pages-links a:hover:after {
+        content: "";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        width: 40px;
+        /* ширина вашей иконки */
+        height: 40px;
+        margin: auto;
+
+
+    }
+
+    /* -------------------------------------------------------------------- */
+
+    .product-six-page-1 {
+        width: 21%;
+        height: 19%;
+        background-color: transparent;
+        display: flex;
+        top: 12%;
+        position: absolute;
+        left: 3.6%;
+        z-index: 1003;
+    }
+
+    .product-six-page-1:hover {
+        transition: 1s;
+        width: 21%;
+        height: 19%;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border: 1px solid #d22a28;
+        border-radius: 5px;
+    }
+
+    .product-six-page-2 {
+        width: 21%;
+        height: 19%;
+        background-color: transparent;
+        display: flex;
+        top: 12%;
+        position: absolute;
+        left: 27.5%;
+        z-index: 1003;
+    }
+
+    .product-six-page-2:hover {
+        transition: 1s;
+        width: 21%;
+        height: 19%;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border: 1px solid #d22a28;
+        border-radius: 5px;
+    }
+
+    .product-six-page-3 {
+        width: 21%;
+        height: 19%;
+        background-color: transparent;
+        display: flex;
+        top: 12%;
+        position: absolute;
+        left: 51.5%;
+        z-index: 1003;
+    }
+
+    .product-six-page-3:hover {
+        transition: 1s;
+        width: 21%;
+        height: 19%;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border: 1px solid #d22a28;
+        border-radius: 5px;
+    }
+
+    .product-six-page-4 {
+        width: 21%;
+        height: 19%;
+        background-color: transparent;
+        display: flex;
+        top: 12%;
+        position: absolute;
+        left: 75%;
+        z-index: 1003;
+    }
+
+    .product-six-page-4:hover {
+        transition: 1s;
+        width: 21%;
+        height: 19%;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border: 1px solid #d22a28;
+        border-radius: 5px;
+    }
+
+    .product-six-page-5 {
+        width: 21%;
+        height: 19%;
+        background-color: transparent;
+        display: flex;
+        top: 33%;
+        position: absolute;
+        left: 3.6%;
+        z-index: 1003;
+    }
+
+    .product-six-page-5:hover {
+        transition: 1s;
+        width: 21%;
+        height: 19%;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border: 1px solid #d22a28;
+        border-radius: 5px;
+    }
+
+    .product-six-page-6 {
+        width: 21%;
+        height: 19%;
+        background-color: transparent;
+        display: flex;
+        top: 33%;
+        position: absolute;
+        left: 27.5%;
+        z-index: 1003;
+    }
+
+    .product-six-page-6:hover {
+        transition: 1s;
+        width: 21%;
+        height: 19%;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border: 1px solid #d22a28;
+        border-radius: 5px;
+    }
+
+    .product-six-page-7 {
+        width: 21%;
+        height: 19%;
+        background-color: transparent;
+        display: flex;
+        top: 33%;
+        position: absolute;
+        left: 51.5%;
+        z-index: 1003;
+    }
+
+    .product-six-page-7:hover {
+        transition: 1s;
+        width: 21%;
+        height: 19%;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border: 1px solid #d22a28;
+        border-radius: 5px;
+    }
+
+    .product-six-page-8 {
+        width: 21%;
+        height: 19%;
+        background-color: transparent;
+        display: flex;
+        top: 33%;
+        position: absolute;
+        left: 75%;
+        z-index: 1003;
+    }
+
+    .product-six-page-8:hover {
+        transition: 1s;
+        width: 21%;
+        height: 19%;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border: 1px solid #d22a28;
+        border-radius: 5px;
+    }
+
+    .product-six-page-9 {
+        width: 21%;
+        height: 19%;
+        background-color: transparent;
+        display: flex;
+        top: 54%;
+        position: absolute;
+        left: 3.6%;
+        z-index: 1003;
+    }
+
+    .product-six-page-9:hover {
+        transition: 1s;
+        width: 21%;
+        height: 19%;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border: 1px solid #d22a28;
+        border-radius: 5px;
+    }
+
+    .product-six-page-10 {
+        width: 21%;
+        height: 19%;
+        background-color: transparent;
+        display: flex;
+        top: 54%;
+        position: absolute;
+        left: 27.5%;
+        z-index: 1003;
+    }
+
+    .product-six-page-10:hover {
+        transition: 1s;
+        width: 21%;
+        height: 19%;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border: 1px solid #d22a28;
+        border-radius: 5px;
+    }
+
+    .product-six-page-11 {
+        width: 21%;
+        height: 19%;
+        background-color: transparent;
+        display: flex;
+        top: 54%;
+        position: absolute;
+        left: 51.5%;
+        z-index: 1003;
+    }
+
+    .product-six-page-11:hover {
+        transition: 1s;
+        width: 21%;
+        height: 19%;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border: 1px solid #d22a28;
+        border-radius: 5px;
+    }
+
+    .product-six-page-12 {
+        width: 21%;
+        height: 19%;
+        background-color: transparent;
+        display: flex;
+        top: 54%;
+        position: absolute;
+        left: 75%;
+        z-index: 1003;
+    }
+
+    .product-six-page-12:hover {
+        transition: 1s;
+        width: 21%;
+        height: 19%;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border: 1px solid #d22a28;
+        border-radius: 5px;
+    }
+
+    .product-six-page-13 {
+        width: 21%;
+        height: 19%;
+        background-color: transparent;
+        display: flex;
+        top: 75%;
+        position: absolute;
+        left: 3.6%;
+        z-index: 1003;
+    }
+
+    .product-six-page-13:hover {
+        transition: 1s;
+        width: 21%;
+        height: 19%;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border: 1px solid #d22a28;
+        border-radius: 5px;
+    }
+
+    .product-six-page-14 {
+        width: 21%;
+        height: 19%;
+        background-color: transparent;
+        display: flex;
+        top: 75%;
+        position: absolute;
+        left: 27.5%;
+        z-index: 1003;
+    }
+
+    .product-six-page-14:hover {
+        transition: 1s;
+        width: 21%;
+        height: 19%;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border: 1px solid #d22a28;
+        border-radius: 5px;
+    }
+
+    .product-six-page-15 {
+        width: 21%;
+        height: 19%;
+        background-color: transparent;
+        display: flex;
+        top: 75%;
+        position: absolute;
+        left: 51.5%;
+        z-index: 1003;
+    }
+
+    .product-six-page-15:hover {
+        transition: 1s;
+        width: 21%;
+        height: 19%;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border: 1px solid #d22a28;
+        border-radius: 5px;
+    }
+
+    .product-six-page-16 {
+        width: 21%;
+        height: 19%;
+        background-color: transparent;
+        display: flex;
+        top: 75%;
+        position: absolute;
+        left: 75%;
+        z-index: 1003;
+    }
+
+    .product-six-page-16:hover {
+        transition: 1s;
+        width: 21%;
+        height: 19%;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border: 1px solid #d22a28;
+        border-radius: 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 2000px) {}
+
+
+@media screen and (max-width: 1800px) {}
+
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1400px) {
+    .pages-links a::after {
+        content: "";
+        display: none;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .pages-links a:hover:after {
+        content: "";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .pages-links a::after {
+        content: "";
+        display: none;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .pages-links a:hover:after {
+        content: "";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+
+    }
+}
+
+@media screen and (max-width: 1000px) {}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 360px) {}

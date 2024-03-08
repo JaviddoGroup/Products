@@ -52,7 +52,7 @@
         margin-top: 15px;
     }
 
-    .move-buttons button {
+    .move-buttons div {
         width: 140px;
         height: 30px;
         font-size: 14px;
@@ -65,7 +65,7 @@
         cursor: pointer;
     }
 
-    .move-buttons button:hover {
+    .move-buttons div:hover {
         transition: 1s;
         background-color: rgba(63, 63, 63, 0.7);
         backdrop-filter: blur(1px);
@@ -114,23 +114,6 @@
         transition: 1s;
         width: 35px;
         height: 35px;
-    }
-
-    .first-link-for-first-pages {
-        width: 150px;
-        height: 150px;
-        background-color: transparent;
-        display: flex;
-        top: 25px;
-        position: absolute;
-        left: 159px;
-        z-index: 1003;
-    }
-
-    .first-link-for-first-pages:hover {
-        width: 150px;
-        height: 150px;
-        background-color: #d22b28b1;
     }
 }
 
@@ -188,7 +171,7 @@
         margin-top: 5px;
     }
 
-    .move-buttons button {
+    .move-buttons div {
         width: 140px;
         height: 30px;
         font-size: 14px;
@@ -201,7 +184,7 @@
         cursor: pointer;
     }
 
-    .move-buttons button:hover {
+    .move-buttons div:hover {
         transition: 1s;
         background-color: rgba(63, 63, 63, 0.7);
         backdrop-filter: blur(1px);
@@ -250,23 +233,6 @@
         transition: 1s;
         width: 35px;
         height: 35px;
-    }
-
-    .first-link-for-first-pages {
-        width: 105px;
-        height: 88px;
-        background-color: transparent;
-        display: flex;
-        top: 23px;
-        position: absolute;
-        left: 105px;
-        z-index: 1003;
-    }
-
-    .first-link-for-first-pages:hover {
-        width: 105px;
-        height: 88px;
-        background-color: #d22b28b1;
     }
 }
 
@@ -324,7 +290,7 @@
         margin-top: 5px;
     }
 
-    .move-buttons button {
+    .move-buttons div {
         width: 140px;
         height: 30px;
         font-size: 14px;
@@ -337,7 +303,7 @@
         cursor: pointer;
     }
 
-    .move-buttons button:hover {
+    .move-buttons div:hover {
         transition: 1s;
         background-color: rgba(63, 63, 63, 0.7);
         backdrop-filter: blur(1px);
@@ -388,22 +354,6 @@
         height: 35px;
     }
 
-    .first-link-for-first-pages {
-        width: 105px;
-        height: 88px;
-        background-color: transparent;
-        display: flex;
-        top: 23px;
-        position: absolute;
-        left: 105px;
-        z-index: 1003;
-    }
-
-    .first-link-for-first-pages:hover {
-        width: 105px;
-        height: 88px;
-        background-color: #d22b28b1;
-    }
 }
 
 @media screen and (max-width: 1600px) {
@@ -459,7 +409,7 @@
         margin-top: 5px;
     }
 
-    .move-buttons button {
+    .move-buttons div {
         width: 140px;
         height: 30px;
         font-size: 14px;
@@ -472,7 +422,7 @@
         cursor: pointer;
     }
 
-    .move-buttons button:hover {
+    .move-buttons div:hover {
         transition: 1s;
         background-color: rgba(63, 63, 63, 0.7);
         backdrop-filter: blur(1px);
@@ -523,22 +473,6 @@
         height: 30px;
     }
 
-    .first-link-for-first-pages {
-        width: 95px;
-        height: 75px;
-        background-color: transparent;
-        display: flex;
-        top: 22px;
-        position: absolute;
-        left: 92px;
-        z-index: 1003;
-    }
-
-    .first-link-for-first-pages:hover {
-        width: 95px;
-        height: 75px;
-        background-color: #d22b28b1;
-    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -594,7 +528,7 @@
         margin-top: 5px;
     }
 
-    .move-buttons button {
+    .move-buttons div {
         width: 140px;
         height: 30px;
         font-size: 14px;
@@ -607,7 +541,7 @@
         cursor: pointer;
     }
 
-    .move-buttons button:hover {
+    .move-buttons div:hover {
         transition: 1s;
         background-color: rgba(63, 63, 63, 0.7);
         backdrop-filter: blur(1px);
@@ -656,23 +590,6 @@
         transition: 1s;
         width: 25px;
         height: 25px;
-    }
-
-    .first-link-for-first-pages {
-        width: 77px;
-        height: 65px;
-        background-color: transparent;
-        display: flex;
-        top: 16px;
-        position: absolute;
-        left: 73px;
-        z-index: 1003;
-    }
-
-    .first-link-for-first-pages:hover {
-        width: 77px;
-        height: 65px;
-        background-color: #d22b28b1;
     }
 
 }
@@ -731,7 +648,7 @@
         margin-top: 5px;
     }
 
-    .move-buttons button {
+    .move-buttons div {
         width: 140px;
         height: 30px;
         font-size: 14px;
@@ -744,7 +661,7 @@
         cursor: pointer;
     }
 
-    .move-buttons button:hover {
+    .move-buttons div:hover {
         transition: 1s;
         background-color: rgba(63, 63, 63, 0.7);
         backdrop-filter: blur(1px);
@@ -793,23 +710,6 @@
         transition: 1s;
         width: 25px;
         height: 25px;
-    }
-
-    .first-link-for-first-pages {
-        width: 70px;
-        height: 60px;
-        background-color: transparent;
-        display: flex;
-        top: 16px;
-        position: absolute;
-        left: 68px;
-        z-index: 1003;
-    }
-
-    .first-link-for-first-pages:hover {
-        width: 70px;
-        height: 60px;
-        background-color: #d22b28b1;
     }
 }
 
@@ -867,7 +767,7 @@
         margin-top: 5px;
     }
 
-    .move-buttons button {
+    .move-buttons div {
         width: 140px;
         height: 30px;
         font-size: 14px;
@@ -880,7 +780,7 @@
         cursor: pointer;
     }
 
-    .move-buttons button:hover {
+    .move-buttons div:hover {
         transition: 1s;
         background-color: rgba(63, 63, 63, 0.7);
         backdrop-filter: blur(1px);
@@ -929,23 +829,6 @@
         transition: 1s;
         width: 15px;
         height: 15px;
-    }
-
-    .first-link-for-first-pages {
-        width: 60px;
-        height: 50px;
-        background-color: transparent;
-        display: flex;
-        top: 12px;
-        position: absolute;
-        left: 53px;
-        z-index: 1003;
-    }
-
-    .first-link-for-first-pages:hover {
-        width: 60px;
-        height: 50px;
-        background-color: #d22b28b1;
     }
 }
 
@@ -1044,23 +927,6 @@
         transition: 1s;
         width: 15px;
         height: 15px;
-    }
-
-    .first-link-for-first-pages {
-        width: 60px;
-        height: 50px;
-        background-color: transparent;
-        display: flex;
-        top: 14px;
-        position: absolute;
-        left: 63px;
-        z-index: 1003;
-    }
-
-    .first-link-for-first-pages:hover {
-        width: 60px;
-        height: 50px;
-        background-color: #d22b28b1;
     }
 
 }
@@ -1180,23 +1046,6 @@
         width: 25px;
         height: 25px;
     }
-
-    .first-link-for-first-pages {
-        width: 80px;
-        height: 65px;
-        background-color: transparent;
-        display: flex;
-        top: 15px;
-        position: absolute;
-        left: 75px;
-        z-index: 1003;
-    }
-
-    .first-link-for-first-pages:hover {
-        width: 80px;
-        height: 65px;
-        background-color: #d22b28b1;
-    }
 }
 
 @media screen and (max-width: 400px) {
@@ -1295,23 +1144,6 @@
         width: 25px;
         height: 25px;
     }
-
-    .first-link-for-first-pages {
-        width: 70px;
-        height: 60px;
-        background-color: transparent;
-        display: flex;
-        top: 15px;
-        position: absolute;
-        left: 68px;
-        z-index: 1003;
-    }
-
-    .first-link-for-first-pages:hover {
-        width: 70px;
-        height: 60px;
-        background-color: #d22b28b1;
-    }
 }
 
 @media screen and (max-width: 360px) {
@@ -1339,22 +1171,5 @@
         backdrop-filter: blur(1px);
         font-weight: bold;
 
-    }
-
-    .first-link-for-first-pages {
-        width: 60px;
-        height: 50px;
-        background-color: transparent;
-        display: flex;
-        top: 12px;
-        position: absolute;
-        left: 55px;
-        z-index: 1003;
-    }
-
-    .first-link-for-first-pages:hover {
-        width: 60px;
-        height: 50px;
-        background-color: #d22b28b1;
     }
 }

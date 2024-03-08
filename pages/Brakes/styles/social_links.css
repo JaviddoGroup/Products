@@ -1,0 +1,212 @@
+@media screen and (max-width: 2560px) {
+    .first-link-for-first-pages {
+        width: 150px;
+        height: 150px;
+        background-color: transparent;
+        display: flex;
+        top: 25px;
+        position: absolute;
+        left: 159px;
+        z-index: 1003;
+    }
+
+    .first-link-for-first-pages:hover {
+        width: 150px;
+        height: 150px;
+        background-color: #d22b28b1;
+    }
+}
+
+
+@media screen and (max-width: 2000px) {
+    .first-link-for-first-pages {
+        width: 105px;
+        height: 88px;
+        background-color: transparent;
+        display: flex;
+        top: 23px;
+        position: absolute;
+        left: 105px;
+        z-index: 1003;
+    }
+
+    .first-link-for-first-pages:hover {
+        width: 105px;
+        height: 88px;
+        background-color: #d22b28b1;
+    }
+}
+
+
+@media screen and (max-width: 1800px) {
+    .first-link-for-first-pages {
+        width: 105px;
+        height: 88px;
+        background-color: transparent;
+        display: flex;
+        top: 23px;
+        position: absolute;
+        left: 105px;
+        z-index: 1003;
+    }
+
+    .first-link-for-first-pages:hover {
+        width: 105px;
+        height: 88px;
+        background-color: #d22b28b1;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .first-link-for-first-pages {
+        width: 95px;
+        height: 75px;
+        background-color: transparent;
+        display: flex;
+        top: 22px;
+        position: absolute;
+        left: 92px;
+        z-index: 1003;
+    }
+
+    .first-link-for-first-pages:hover {
+        width: 95px;
+        height: 75px;
+        background-color: #d22b28b1;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .first-link-for-first-pages {
+        width: 77px;
+        height: 65px;
+        background-color: transparent;
+        display: flex;
+        top: 16px;
+        position: absolute;
+        left: 73px;
+        z-index: 1003;
+    }
+
+    .first-link-for-first-pages:hover {
+        width: 77px;
+        height: 65px;
+        background-color: #d22b28b1;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .first-link-for-first-pages {
+        width: 70px;
+        height: 60px;
+        background-color: transparent;
+        display: flex;
+        top: 16px;
+        position: absolute;
+        left: 68px;
+        z-index: 1003;
+    }
+
+    .first-link-for-first-pages:hover {
+        width: 70px;
+        height: 60px;
+        background-color: #d22b28b1;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .first-link-for-first-pages {
+        width: 60px;
+        height: 50px;
+        background-color: transparent;
+        display: flex;
+        top: 12px;
+        position: absolute;
+        left: 53px;
+        z-index: 1003;
+    }
+
+    .first-link-for-first-pages:hover {
+        width: 60px;
+        height: 50px;
+        background-color: #d22b28b1;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .first-link-for-first-pages {
+        width: 60px;
+        height: 50px;
+        background-color: transparent;
+        display: flex;
+        top: 14px;
+        position: absolute;
+        left: 63px;
+        z-index: 1003;
+    }
+
+    .first-link-for-first-pages:hover {
+        width: 60px;
+        height: 50px;
+        background-color: #d22b28b1;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .first-link-for-first-pages {
+        width: 80px;
+        height: 65px;
+        background-color: transparent;
+        display: flex;
+        top: 15px;
+        position: absolute;
+        left: 75px;
+        z-index: 1003;
+    }
+
+    .first-link-for-first-pages:hover {
+        width: 80px;
+        height: 65px;
+        background-color: #d22b28b1;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .first-link-for-first-pages {
+        width: 70px;
+        height: 60px;
+        background-color: transparent;
+        display: flex;
+        top: 15px;
+        position: absolute;
+        left: 68px;
+        z-index: 1003;
+    }
+
+    .first-link-for-first-pages:hover {
+        width: 70px;
+        height: 60px;
+        background-color: #d22b28b1;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .first-link-for-first-pages {
+        width: 60px;
+        height: 50px;
+        background-color: transparent;
+        display: flex;
+        top: 12px;
+        position: absolute;
+        left: 55px;
+        z-index: 1003;
+    }
+
+    .first-link-for-first-pages:hover {
+        width: 60px;
+        height: 50px;
+        background-color: #d22b28b1;
+    }
+}
