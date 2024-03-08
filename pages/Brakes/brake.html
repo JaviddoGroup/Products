@@ -21,7 +21,11 @@
         <div class="text-box">
         </div>
         <div class="center-frame">
-
+                <div class="container">
+                        <div class="box" id="box1"><img src="../../media/svg/full-screen.svg" alt="Full Screen"></div>
+                        <div class="box hidden" id="box2"><img src="../../media/svg/exit-full-screen.svg"
+                                        alt="Exit Full Screen"></div>
+                </div>
                 <div class="picture-frame">
                         <div class="swiper-container">
                                 <div class="swiper-wrapper">
@@ -246,6 +250,21 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script>
                 document.addEventListener('DOMContentLoaded', function () {
+                        var box1 = document.getElementById('box1');
+                        var box2 = document.getElementById('box2');
+
+                        box1.addEventListener('click', function () {
+                                box1.classList.add('hidden');
+                                box2.classList.remove('hidden');
+                        });
+
+                        box2.addEventListener('click', function () {
+                                box2.classList.add('hidden');
+                                box1.classList.remove('hidden');
+                        });
+                });
+
+                document.addEventListener('DOMContentLoaded', function () {
                         var pauseButton = document.getElementById('pauseButton');
                         var resumeButton = document.getElementById('resumeButton');
 
@@ -308,7 +327,7 @@
                         var popup = null;
                         var popupImage = null;
                         var currentImageUrl = null;
-                        var autoplayStopped = false; // Переменная для отслеживания состояния автопрокрутки
+                        var autoplayStopped = false;
 
                         function openPopup(imageUrl) {
                                 if (!popup) {
@@ -319,11 +338,11 @@
                                         popup.appendChild(popupImage);
                                         document.body.appendChild(popup);
                                         centerPopup();
-                                        stopAutoplay(); // Останавливаем автопрокрутку слайдов
+                                        stopAutoplay();
                                 }
                                 popupImage.src = imageUrl;
                                 currentImageUrl = imageUrl;
-                                document.body.style.overflow = 'hidden'; // Отключаем прокрутку страницы при открытом попапе
+                                document.body.style.overflow = 'hidden';
                         }
 
                         function closePopup() {
@@ -332,9 +351,9 @@
                                         popup = null;
                                         popupImage = null;
                                         currentImageUrl = null;
-                                        document.body.style.overflow = ''; // Включаем прокрутку страницы после закрытия попапа
-                                        autoplayStopped = false; // Устанавливаем значение в false при закрытии попапа
-                                        startAutoplay(); // Запускаем автопрокрутку слайдов
+                                        document.body.style.overflow = '';
+                                        autoplayStopped = false;
+                                        startAutoplay();
                                 }
                         }
 
@@ -348,36 +367,24 @@
                         function stopAutoplay() {
                                 var mySwiper = document.querySelector('.swiper-container').swiper;
                                 mySwiper.autoplay.stop();
-                                autoplayStopped = true; // Обновляем состояние переменной
+                                autoplayStopped = true;
                         }
 
                         function startAutoplay() {
                                 var mySwiper = document.querySelector('.swiper-container').swiper;
                                 mySwiper.autoplay.start();
-                                autoplayStopped = false; // Обновляем состояние переменной
+                                autoplayStopped = false;
                         }
 
-                        document.querySelectorAll('.swiper-slide').forEach(function (slide) {
-                                slide.addEventListener('dblclick', function () {
-                                        var imageUrl = this.querySelector('img').src;
+                        document.querySelectorAll('.box').forEach(function (box) {
+                                box.addEventListener('click', function () {
+                                        var imageUrl = document.querySelector('.swiper-slide-active img').src;
                                         if (popup && currentImageUrl === imageUrl) {
                                                 closePopup();
                                         } else {
                                                 openPopup(imageUrl);
                                         }
                                 });
-                        });
-
-                        document.addEventListener('click', function (event) {
-                                if (popup && event.target === popup) {
-                                        closePopup();
-                                }
-                        });
-
-                        document.addEventListener('click', function (event) {
-                                if (popupImage && event.target === popupImage) {
-                                        closePopup();
-                                }
                         });
 
                         window.addEventListener('resize', function () {
@@ -389,23 +396,30 @@
 
 
                 document.addEventListener('DOMContentLoaded', function () {
-                        var swiperSlideActiveElements = document.querySelectorAll('.swiper-slide');
+                        var swiperSlideActiveElements = document.querySelectorAll('.box');
 
                         swiperSlideActiveElements.forEach(function (element) {
-                                element.addEventListener('dblclick', function () {
+                                element.addEventListener('click', function () {
+                                        // Удаляем все существующие элементы с классом 'alert-text-box'
+                                        var existingElements = document.querySelectorAll('.alert-text-box');
+                                        existingElements.forEach(function (existingElement) {
+                                                existingElement.remove();
+                                        });
+
                                         var textElement = document.createElement('div');
                                         textElement.textContent = 'To exit full-screen mode, click on the photo again';
-                                        textElement.classList.add('alert-text-box'); // Добавление класса "my-text-class"
+                                        textElement.classList.add('alert-text-box'); // Добавление класса "alert-text-box"
 
                                         var bodyElement = document.querySelector('.text-box');
                                         bodyElement.insertBefore(textElement, bodyElement.firstChild);
 
                                         setTimeout(function () {
-                                                textElement.style.display = 'none';
+                                                textElement.remove(); // Удаление элемента
                                         }, 3000); // Таймер на 3 секунды (3000 миллисекунд)
                                 });
                         });
                 });
+
 
 
 
