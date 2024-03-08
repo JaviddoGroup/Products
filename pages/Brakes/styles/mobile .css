@@ -2,7 +2,7 @@
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 40%;
+        width: 35%;
         height: auto;
         /* object-fit: cover; */
     }
@@ -51,6 +51,32 @@
         backdrop-filter: blur(1px);
         font-weight: bold;
     }
+
+    .move-buttons {
+        margin-top: 15px;
+    }
+
+    .move-buttons button {
+        width: 140px;
+        height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border-radius: 4px;
+        border: none;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .move-buttons button:hover {
+        transition: 1s;
+        background-color: rgba(63, 63, 63, 0.7);
+        backdrop-filter: blur(1px);
+        color: #fff;
+        cursor: pointer;
+    }
+
 
 }
 
@@ -103,6 +129,31 @@
         backdrop-filter: blur(1px);
         font-weight: bold;
     }
+
+    .move-buttons {
+        margin-top: 5px;
+    }
+
+    .move-buttons button {
+        width: 140px;
+        height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border-radius: 4px;
+        border: none;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .move-buttons button:hover {
+        transition: 1s;
+        background-color: rgba(63, 63, 63, 0.7);
+        backdrop-filter: blur(1px);
+        color: #fff;
+        cursor: pointer;
+    }
 }
 
 
@@ -110,7 +161,7 @@
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 30%;
+        width: 35%;
         height: auto;
         /* object-fit: cover; */
     }
@@ -154,13 +205,38 @@
         backdrop-filter: blur(1px);
         font-weight: bold;
     }
+
+    .move-buttons {
+        margin-top: 5px;
+    }
+
+    .move-buttons button {
+        width: 140px;
+        height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border-radius: 4px;
+        border: none;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .move-buttons button:hover {
+        transition: 1s;
+        background-color: rgba(63, 63, 63, 0.7);
+        backdrop-filter: blur(1px);
+        color: #fff;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 1600px) {
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 30%;
+        width: 35%;
         height: auto;
         /* object-fit: cover; */
     }
@@ -204,13 +280,38 @@
         backdrop-filter: blur(1px);
         font-weight: bold;
     }
+
+    .move-buttons {
+        margin-top: 5px;
+    }
+
+    .move-buttons button {
+        width: 140px;
+        height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border-radius: 4px;
+        border: none;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .move-buttons button:hover {
+        transition: 1s;
+        background-color: rgba(63, 63, 63, 0.7);
+        backdrop-filter: blur(1px);
+        color: #fff;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 1400px) {
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 27%;
+        width: 32%;
         height: auto;
         /* object-fit: cover; */
     }
@@ -254,13 +355,38 @@
         backdrop-filter: blur(1px);
         font-weight: bold;
     }
+
+    .move-buttons {
+        margin-top: 5px;
+    }
+
+    .move-buttons button {
+        width: 140px;
+        height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border-radius: 4px;
+        border: none;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .move-buttons button:hover {
+        transition: 1s;
+        background-color: rgba(63, 63, 63, 0.7);
+        backdrop-filter: blur(1px);
+        color: #fff;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 39%;
+        width: 33%;
         height: auto;
         /* object-fit: cover; */
     }
@@ -305,13 +431,38 @@
         font-weight: bold;
 
     }
+
+    .move-buttons {
+        margin-top: 5px;
+    }
+
+    .move-buttons button {
+        width: 140px;
+        height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border-radius: 4px;
+        border: none;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .move-buttons button:hover {
+        transition: 1s;
+        background-color: rgba(63, 63, 63, 0.7);
+        backdrop-filter: blur(1px);
+        color: #fff;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 1000px) {
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 40%;
+        width: 32%;
         height: auto;
         /* object-fit: cover; */
     }
@@ -356,13 +507,38 @@
         font-weight: bold;
 
     }
+
+    .move-buttons {
+        margin-top: 5px;
+    }
+
+    .move-buttons button {
+        width: 140px;
+        height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(1px);
+        border-radius: 4px;
+        border: none;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    .move-buttons button:hover {
+        transition: 1s;
+        background-color: rgba(63, 63, 63, 0.7);
+        backdrop-filter: blur(1px);
+        color: #fff;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .picture-frame {
         overflow: hidden;
         justify-content: center;
-        width: 33%;
+        width: 43%;
         height: auto;
         /* object-fit: cover; */
     }

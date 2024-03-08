@@ -358,7 +358,7 @@
                         }
 
                         document.querySelectorAll('.swiper-slide').forEach(function (slide) {
-                                slide.addEventListener('click', function () {
+                                slide.addEventListener('dblclick', function () {
                                         var imageUrl = this.querySelector('img').src;
                                         if (popup && currentImageUrl === imageUrl) {
                                                 closePopup();
@@ -392,7 +392,7 @@
                         var swiperSlideActiveElements = document.querySelectorAll('.swiper-slide');
 
                         swiperSlideActiveElements.forEach(function (element) {
-                                element.addEventListener('click', function () {
+                                element.addEventListener('dblclick', function () {
                                         var textElement = document.createElement('div');
                                         textElement.textContent = 'To exit full-screen mode, click on the photo again';
                                         textElement.classList.add('alert-text-box'); // Добавление класса "my-text-class"
